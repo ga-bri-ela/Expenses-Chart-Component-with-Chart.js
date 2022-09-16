@@ -14,6 +14,7 @@ window.onload = function () {
     let orangeBar = 'hsl(10, 79%, 65%)';
     let blueBar = 'hsl(186, 34%, 60%)';
 
+
   
     const myChart = new Chart(ctx, {
       type: "bar",
