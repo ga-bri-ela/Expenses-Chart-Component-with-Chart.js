@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="images/favicon-32x32.png"/>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.min.js"></script>
+        <title>Expenses Chart Component</title>
+    </head>
+
+    <body>
+        <div id="app">
+        <header>
+            <section id="balance">
+                <h6 class="balance-text">My balance</h6>
+                <h3 class="balance-text">$921.48</h3>
+            </section>
+            <img src="images/logo.svg">
+        </header>
+        <div class="square-background">
+            <div id="chart">
+                <caption><h3 id="spending">Spending - Last 7 days</h3></caption>
+                <div id="chartContainer">
+                <canvas id="myChart"></canvas>
+                </div>
+            </div>
+            <hr>
+            <footer>
+                <section id="total">
+                    <h6 id='f1' class="footerText">Total this month</h6>
+                    <h2 class="footerText">$478.33</h2>
+                </section>
+                <section id="month-growth">
+                    <h6 class="footerText" id="percentage">+2.4%</h6>
+                    <h6 id='f2' class="footerText">from last month</h6>
+                </section>
+            </footer>
+        </div>
+        </div>
+    </body>
+    <script type="module" src="script.js"></script>
+    <script src="script.js"></script>
+</html>

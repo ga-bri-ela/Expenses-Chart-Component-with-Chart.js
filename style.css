@@ -1,0 +1,101 @@
+body {
+    background-color:hsl(27, 66%, 92%);
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+#app {
+    display: flex column;
+}
+
+header {
+
+    width: 505px;
+    height: 70px;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 25px;
+
+}
+#chartContainer {
+    margin: 10px;
+}
+
+#spending {
+    padding-left: 30px;
+}
+
+
+h6 {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+h3{
+    font-size:28px;
+}
+
+h2 {
+    font-size: 38px;
+}
+
+#percentage {
+    font-weight: bold;
+    text-align: right;
+}
+
+.footerText {
+    margin: 0 auto;
+}
+
+#month-growth {
+    margin-top: 18px;
+    float: right;
+    padding-right: 20px;
+}
+
+#total {
+    float: left;
+    padding-left: 20px;
+}
+
+.balance-text{
+    margin: 5px auto;
+}
+
+hr {
+    margin: 20px 20px 40px 20px;
+    background-color: hsl(27, 66%, 92%);
+    height: 2px;
+    border: none;
+   
+}
+
+.square-background{
+    width: 525px;   
+    padding: 20px;
+    height: 500px;
+    background-color: white;
+    border-radius: 30px;
+    margin: auto;
+    color: hsl(25, 47%, 15%);
+    
+}
+
+#f1{
+    color: hsl(28, 10%, 53%);
+}
+
+#f2{
+    color: hsl(28, 10%, 53%);
+}
