@@ -1,12 +1,30 @@
-import dataJSON from 'https://github.com/ga-bri-ela/Expenses-Chart-Component-with-Chart.js/blob/8053733b62f13a40df5aa42e30a606129a95d460/data.json' assert {type: 'json'};
+import dataJSON from '/data.json' assert {type: 'json'};
+
+/*
+async function fetchData() {
+    const url= 'data.json';
+    const response = await fetch(url);
+    const dataPoints = await response.json();
+    return dataPoints;
+}
+
+fetchData().then(datapoints => {
+    const weekData = datapoints.map(
+        function(index){
+            return index;
+        });
+    console.log(index)
+    });
+*/
+
 
 const d = new Date();
 let today = d.getDay();
-let index = today - 1;
+let adjustedDay = today - 1;
 
 
 const daysHover = ['hsl(10, 79%, 85%)', 'hsl(10, 79%, 85%)', 'hsl(10, 79%, 85%)','hsl(10, 79%, 85%)', 'hsl(10, 79%, 85%)','hsl(10, 79%, 85%)'];
-daysHover.splice(index, 0, 'hsl(186, 34%, 85%)');
+daysHover.splice(adjustedDay, 0, 'hsl(186, 34%, 85%)');
 
 
 window.onload = function () {
@@ -23,7 +41,7 @@ window.onload = function () {
         datasets: [{
             data: dataJSON.map((element) => element.amount),
             backgroundColor: (color) => {
-              let backgroundColor = color.dataIndex === index ? blueBar : orangeBar;
+              let backgroundColor = color.dataIndex === adjustedDay ? blueBar : orangeBar;
               return backgroundColor;
             },
             hoverBackgroundColor: (daysHover),
