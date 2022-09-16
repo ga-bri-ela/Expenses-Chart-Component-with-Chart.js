@@ -81,7 +81,8 @@ fetchData().then(datapoints => {
                     backgroundColor: 'hsl(25, 47%, 15%)', 
                     displayColors: false,
                     cornerRadius: 5,
-                    padding: 10,
+                    padding: 7,
+                    xAlign: 'center',
                     caretSize: 0,
                     callbacks: {
                         title : (function () {
