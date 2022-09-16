@@ -16,7 +16,7 @@ let days = [];
 let amount = [];
 
 fetchData().then(datapoints => {
-    let dataTotal = datapoints;
+
     days = datapoints.map(
         function(index){
             return index.day;
@@ -87,6 +87,17 @@ fetchData().then(datapoints => {
                         title : (function () {
                             return null;
                         }),
+                    label: function(context) {
+                            let label = context.dataset.label || '';
+    
+                            if (label) {
+                                label += ': ';
+                            }
+                            if (context.parsed.y !== null) {
+                                label += new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(context.parsed.y);
+                            }
+                            return label;
+                        },
                     },
                 },
             },
