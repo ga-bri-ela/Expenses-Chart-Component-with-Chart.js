@@ -1,4 +1,4 @@
-import dataJSON from '/data.json' assert {type: 'json'};
+import dataJSON from 'https://github.com/ga-bri-ela/Expenses-Chart-Component-with-Chart.js/blob/8053733b62f13a40df5aa42e30a606129a95d460/data.json' assert {type: 'json'};
 
 const d = new Date();
 let today = d.getDay();
