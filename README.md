@@ -31,27 +31,28 @@ This project was built using Chart.js, JavaScript ES6, CSS and HTML.
 
 This was a very exciting project for me as it was my first time working with a JavaScript library. Frontend mentor does not specify which technologies you are supposed to use to complete the challenge, so it was fun to have my pick on how to go about it and work with Chart.js. During the development of this component, I had to carefully go through the documentation to be able to customize all the elements on the chart that I wanted to. Customizing the tooltip was particularly time consuming, as it surprisingly had so much nuance in it. Luckily the documentation was very clear and Youtube had amazing tutorials that made the whole experience really smooth. The coding snippet below shows how I have customized the tooltip with Chart.js:
 >      tooltip:{                    
->                backgroundColor: 'hsl(25, 47%, 15%)', 
+>          backgroundColor: 'hsl(25, 47%, 15%)', 
 >	         displayColors: false,
 >	         cornerRadius: 5,
 >	         padding: 7,
 >	         xAlign: 'center',
 >	         caretSize: 0,
 >	         callbacks: {
->	                     title : (function () {
->	                     return null;
->	                     }),
->	                    label: function(context) {
->	                            let label = context.dataset.label || '';
+>	             title : (function () {
+>	                return null;
+>	             }),
+>	             label: function(context) {
+>	                let label = context.dataset.label || '';
 >	    
->	                            if (label) {
->	                                label += ': ';
->	                            }
->	                            if (context.parsed.y !== null) {
->	                                label += new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(context.parsed.y);
->	                            }
->	                            return label;
+>	                if (label) {
+>	                   label += ': ';
+>	                }
+>	                if (context.parsed.y !== null) {
+>	                   label += new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(context.parsed.y);
+>	                }
+>	                return label;
 >	         },
+>	     }, 
 
 
 By taking on the bonus task proposed by Frontend Mentor and populating the chart with data from a JSON file, I also had the chance implement async JavaScript for the first time independently. To accomplish this task, I also used Fetch API. This was so challenging and got me hitting my head on the keyboard for a bit as I couldn’t get my code to work. I just couldn’t get the fetched information to populate my fields. 😵
