@@ -56,7 +56,7 @@ This was a very exciting project for me as it was my first time working with a J
 
 
 By taking on the bonus task proposed by Frontend Mentor and populating the chart with data from a JSON file, I also had the chance implement async JavaScript for the first time independently. To accomplish this task, I also used Fetch API. This was so challenging and got me hitting my head on the keyboard for a bit as I couldn’t get my code to work. I just couldn’t get the fetched information to populate my fields. 😵
-And everything started working when I found out that all I had to do was place my code customizing the chart inside of the .then() that was following the function that fetched the data. Oops! 
+And everything started working when I found out that all I had to do was place my code customizing the chart inside of the .then() that was following the function that fetched the data. Oops! The video that helped me understand it will be linked below. 
 
 ## Resources and Links 
 -	[Chart.js](https://www.chartjs.org/) Library
