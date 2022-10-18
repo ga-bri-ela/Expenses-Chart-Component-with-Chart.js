@@ -11,7 +11,9 @@ According to Frontend Mentor, to complete the [Expenses Chart Component]( https:
 -	View the bar chart and hover over the individual bars to see the correct amounts for each day
 -	See the current day’s bar highlighted in a different color to the other bars
 -	See hover states for all the interactive elements on the page
+
 They have also added a bonus task that I chose to accomplish, which was:
+
 -	See dynamically generated bars based on the data provided in the local JSON file
 
 ![screenshot of the component](https://github.com/ga-bri-ela/Expenses-Chart-Component-with-Chart.js/blob/main/expenses-%20screenshot%20one.png?raw=true)
@@ -27,8 +29,7 @@ This project was built using Chart.js, JavaScript ES6, CSS and HTML.
 ## Personal take-aways 👩‍💻
 
 This was a very exciting project for me as it was my first time working with a JavaScript library. Frontend mentor does not specify which technologies you are supposed to use to complete the challenge, so it was fun to have my pick on how to go about it and work with Chart.js. During the development of this component, I had to carefully go through the documentation to be able to customize all the elements on the chart that I wanted to. Customizing the tooltip was particularly time consuming, as it surprisingly had so much nuance in it. Luckily the documentation was very clear and Youtube had amazing tutorials that made the whole experience really smooth. The coding snippet below shows how I have customized the tooltip with Chart.js:
->      tooltip:{
-	                    backgroundColor: 'hsl(25, 47%, 15%)', 
+>      tooltip:{                    backgroundColor: 'hsl(25, 47%, 15%)', 
 	                    displayColors: false,
 	                    cornerRadius: 5,
 	                    padding: 7,
